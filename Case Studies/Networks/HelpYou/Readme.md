@@ -6,9 +6,9 @@ For building HelpYou IT from the ground up with advanced networking protocols an
 
 Complementary cisco packet tracer files (.pkt) files are provided to showcase on vIOS.
 
-To pass the network needed to be ran on real hardware and marked off by a teacher, which was completed successfully.
+To pass the network needed to be ran on real hardware and marked off by a teacher, which was completed successfully (creation and set-up parts 1-7).
 
-To pass the software side, all programs and software needed to be able to be successfully deployed (i.e the same as a real world env), which was successfully completed.
+To pass the software side, all programs and software needed to be able to be successfully deployed (i.e the same as a real world env), which was successfully completed (creation and set-up 8-10).
 
 # Assessment Overview
 
