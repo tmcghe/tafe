@@ -25,24 +25,6 @@ To pass the software side, all programs and software needed to be able to be suc
   - DHCP
   - IP Phones
   - CME (Call Manager Express)
-  
----
-
-# Commands and Configuration:
-
-```bash
-show interface
-show run
-show ip route
-show ip nat translations
-show zone security
-show policy-map type inspect zone-pair
-show crypto isakmp sa
-show crypto ipsec sa
-show interface tunnel 0
-show ip dhcp binding
-```
-
 ---
 
 # Operating Systems and Servers:
