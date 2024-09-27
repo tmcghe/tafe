@@ -2,49 +2,50 @@
 
 
 
-<h1 style="text-align:center; color:#1E3A8A;">Create and Deploy a Business via AWS Using a LAMP Stack</h1>
+<h1>Create and Deploy a Business via AWS Using a LAMP Stack</h1>
 
-<table style="width:100%; border:2px solid #1E3A8A; border-collapse: collapse; font-family: Arial, sans-serif;">
-  <thead style="background-color:#1E3A8A; color:white; text-align:left;">
+<table>
+  <thead>
     <tr>
-      <th style="padding:10px; border:1px solid #1E3A8A;">Resource</th>
-      <th style="padding:10px; border:1px solid #1E3A8A;">Cloud Resource</th>
-      <th style="padding:10px; border:1px solid #1E3A8A;">Comments</th>
+      <th>Resource</th>
+      <th>Cloud Resource</th>
+      <th>Comments</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Web Application Server</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">EC2 (with auto scaling LB)</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Managed service for easy deployment and scaling of applications. <strong>Instance type: m5.large</strong></td>
-    </tr>
-    <tr style="background-color:#E0E7FF;">
-      <td style="padding:10px; border:1px solid #1E3A8A;">Database Server</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Amazon RDS (Relational Database Management)</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Managed relational database with Multi-AZ for high availability. <br><code>VPC: 192.167.0.0/16</code>, Running MySQL Community</td>
+      <td>Web Application Server</td>
+      <td>EC2 (with auto scaling LB)</td>
+      <td>Managed service for easy deployment and scaling of applications. <strong>Instance type: m5.large</strong></td>
     </tr>
     <tr>
-      <td style="padding:10px; border:1px solid #1E3A8A;">File Server</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Amazon S3 Standard</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Store/retrieve files <br> High durability <br> Install EC2 instance onto S3 bucket</td>
-    </tr>
-    <tr style="background-color:#E0E7FF;">
-      <td style="padding:10px; border:1px solid #1E3A8A;">Software Dev Environment</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">AWS Cloud9</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Centralized, web-based software development.</td>
+      <td>Database Server</td>
+      <td>Amazon RDS (Relational Database Management)</td>
+      <td>Managed relational database with Multi-AZ for high availability. <br><code>VPC: 192.167.0.0/16</code>, Running MySQL Community</td>
     </tr>
     <tr>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Identity and Access Management</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">AWS IAM</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">Define permissions and access. Enable MFA for security.</td>
+      <td>File Server</td>
+      <td>Amazon S3 Standard</td>
+      <td>Store/retrieve files <br> High durability <br> Install EC2 instance onto S3 bucket</td>
     </tr>
-    <tr style="background-color:#E0E7FF;">
-      <td style="padding:10px; border:1px solid #1E3A8A;">VPC Configuration</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">AWS VPC</td>
-      <td style="padding:10px; border:1px solid #1E3A8A;">VPC: <code>192.167.0.0/16</code>, Subnets: <code>192.168.1.0/24</code> and <code>192.168.0.0/24</code></td>
+    <tr>
+      <td>Software Dev Environment</td>
+      <td>AWS Cloud9</td>
+      <td>Centralized, web-based software development.</td>
+    </tr>
+    <tr>
+      <td>Identity and Access Management</td>
+      <td>AWS IAM</td>
+      <td>Define permissions and access. Enable MFA for security.</td>
+    </tr>
+    <tr>
+      <td>VPC Configuration</td>
+      <td>AWS VPC</td>
+      <td>VPC: <code>192.167.0.0/16</code>, Subnets: <code>192.168.1.0/24</code> and <code>192.168.0.0/24</code></td>
     </tr>
   </tbody>
 </table>
+
 
 
 
