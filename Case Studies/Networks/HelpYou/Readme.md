@@ -12,12 +12,6 @@ To pass the software side, all programs and software needed to be able to be suc
 
 # Assessment Overview
 
-## Assessment Tools:
-- **AT1 Template**
-- **Portfolio Submission** (saved as `Firstname_Lastname_AT1_Attempt_1` or `Firstname_Lastname_AT1_Attempt_2`)
-
----
-
 # Network Devices and Protocols:
 - **Routers:**
   - SB Router
