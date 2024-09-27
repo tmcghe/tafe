@@ -30,7 +30,8 @@ To pass the software side, all programs and software needed to be able to be suc
 # Operating Systems and Servers:
 
 - **Windows PC**
-- **Ubuntu DHCP Server**
+- **Windows Server**
+- **Ubuntu Server**
 - **Domain Controllers (DC1 and DC2)**
 
 ---
