@@ -1,0 +1,165 @@
+## Assessment Task 1: Network Setup, Testing, Troubleshooting, and Verification ##
+You are required to perform a series of parts using physical equipment. These parts are designed to set up a complex network based on a given case study. Your skills and knowledge required for technical specifications, and practical configurations in ICTNWK529 will be assessed.
+Every part is supposed to be done weekly, but the schedule may be altered depending on your skill set and instructor’s teaching plan. Additionally, these parts are designed to be completed in order, meaning that parts are not to be selected randomly as prior parts prepare you for the next one. This implies that you need to save the physical devices’ configurations when one part is finished, which will prepare you for the next part scheduled in the following week. Respectively, when the next lesson begins in the following week, it is expected of you to start where you left off and complete that week’s part; you can quickly setup the lab environment as described for that specific week.
+Furthermore, it is required of you to take screenshots* of your successful lab results (according to your teacher’s instructions) and attach them to your portfolio so it can be marked on LMS. These screenshots are evidence that the part has been successfully completed.
+*The screenshots that are to be taken will be decided by your instructor.
+
+
+## Part 1: Remote access via a secure Site-to-Site VPN tunnel ##
+Two work sites located in Brisbane and Cairns. You need to obtain instructions from your instructor to set up a secure Site-to-Site VPN tunnel to connect these two work sites together. The diagram below demonstrates the topology:
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+In this part you will do basic configuration on these devices. For this part:
+Prepare the work site as per legislative and WHS requirements.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the case study according to the instructions provided by your instructor. 
+Install and configure servers, routers, switches or other devices to provide the Site-to-Site VPN service.
+Implement NAT functionality in your LAN’s connection to the ISP.
+Implement a Firewall between your LAN and the ISP on both Brisbane LAN and Cairns LAN.
+Configure security policies on the firewall to protect the LAN from the ISP side.  
+Configure and troubleshoot all of the devices in the diagram above with the IP addresses, netmasks and default gateways from your table. Confirm that this is correct by pinging each device from every other device.
+Demonstrate to the teacher that you can configure a proxy server and take screenshots of the proxy server configuration and screenshots of proxy client configuration. Briefly describe what is proxy in writing format.   
+Briefly describe in writing what are the steps to configure this firewall. Briefly describe what firewall applications are.   
+Briefly describe what VPN is in writing format.
+You need to demonstrate that the part is successfully completed to your instructor. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to the instructions provided and paste them to your portfolio file for future submission on LMS for marking.
+Make sure that you have backup your lab configuration for the next part!
+Part 2: Implement DHCP services on the LANs of Brisbane and Cairns
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+
+Add the DHCP servers to your network, DHCP-1 in Brisbane LAN and DHCP-2 in Cairns LAN. 
+Using the information provided to you by your teacher, configure DHCP servers in the Brisbane LAN and Cairns Lan to automatically distribute IP addresses to the end devices dynamically. 
+In this part you will implement DHCP services. For this part:
+Prepare the work site as per legislative and WHS requirements covered in the e-mail in the previous part.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the DHCP servers according to the instructions provided by your instructor. 
+Install and configure DHCP servers to provide the DHCP services for Brisbane and Cairns LANs.
+Configure and troubleshoot all of the devices in the diagram above with the IP addresses, netmasks and default gateways from your table. Confirm that the end devices in each LAN successfully obtain IP addresses from the corresponding DHCP server automatically. 
+You need to demonstrate that the part is successfully completed to your instructor. Describe orally what this part is and how you implement it. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to the instructions provided and paste them to your portfolio file for future submission on LMS for marking.
+Make sure that you have backup your lab configuration for the next part!
+
+Part 3: Implement integrated ADDS services and DNS services on the LANs of Brisbane and Cairns
+For this part, you need to install and configure ADDS (Active Directory Domain Service) services in your network. You need to install and configure two Domain Controllers in your network, DC-1 in Brisbane LAN and DC-2 in Cairns LAN as demonstrated in the diagram below. These two DCs are managing the same Active Domain. 
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+
+Using the information provided to you by your teacher, configure Domain Controller servers in the Brisbane LAN and Cairns LAN. Synchronize the active directory between DC-1 and DC-2 to make sure the directory information are consistent in two sites.
+In this part you will implement ADDS services. For this part:
+Prepare the work site as per legislative and WHS requirements covered in the e-mail in the previous part.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the DC servers according to the instructions provided by your instructor. 
+Install and configure Domain Controller servers to provide the ADDS services for Brisbane and Cairns LANs. Compare and keep the time zone settings on the two DCs to be consistent with each other to make sure NTP is used for time synchronisation. Please describe what is NTP.
+Install and configure DNS (Domain Name Service) service on the Domain Controller servers in Brisbane and Cairns LANs. Compare and keep the time zone settings on the two DCs to be consistent with each other to make sure NTP is used for time synchronization.  
+Configure and troubleshoot all of the devices in the diagram above with the IP addresses, netmasks and default gateways from your table. Confirm that the end devices in each LAN successfully join the Domain servers correspondently. 
+Create Site Brisbane and Site Cairns in the Active Directory as these two sites connected with a WAN link are two networks located separately in Brisbane and Cairns. Sites would automatically direct users requests to the closest resources. For example, for users located in Brisbane, their ADDS requests will be directed to the domain controller DC-1 configured in site Brisbane instead of DC-2. Please use your own language to describe in writing that how ADDS Sites implement load balancing across DCs to share with the client AD requests. 
+Create subnets for the two sites according to the IP address tables you designed for this project. 
+Move the domain controllers to the corresponding sites. DC-1 under Brisbane Site and DC-2 under Cairns Site. 
+Configure the IP site link schedules to replicate the Active Directory data between DC-1 and DC-2 during the off peak hours. 
+Modify the firewall policies on the LAN border in both sites to allow the communication between DC-1 and DC-2.
+Create OUs on one DC and force replication between two DCs to verify the synchronisation between the two sites.
+Briefly describe what user authentication is in writing format. Briefly describe what Active Directory is in writing format. 
+You need to demonstrate that the part is successfully completed to your instructor. Describe orally what this part is and how you implement it. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to the instructions provided and paste them to your portfolio file for future submission on LMS for marking.
+Make sure that you have backup your lab configuration for the next part!
+
+Part 4: Implement DFS, FSRM, Desktop Management, Anti-Virus Software Deployment on the LANs of Brisbane and Cairns  
+For this part, you need to add two File servers in Brisbane LAN, FS-1 and FS-2 as demonstrated in the diagram below. 
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+
+Using the information provided to you by your teacher, configure two file servers in the Brisbane LAN. 
+In this part you will install and configure DFS (Distributed File System), FSRM (File Server Resource Manager), Desktop Management, and Anti-virus software deployment. For this part:
+Prepare the work site as per legislative and WHS requirements covered in the e-mail in the previous part.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the File servers according to the instructions provided by your instructor. 
+Add two file servers to the Brisbane LAN using the IP addresses in step 2.  
+Install and configure Distributed File System (DFS) on FS-1 and FS-2 to (based on detailed instructions from your instructor) 
+Allow distributed shares on multiple servers.
+Configure DFS Namespace to allow easier management of the distributed shares created in 4.a.
+Configure DFS replication between shares created in 4.a.
+Install and configure File Server Resource Manager on FS-1 and FS-2 to (based on detailed instructions from your instructor)
+Configure storage quotas based on users’ needs.
+Configure file screening to prevent movies from being stored to a folder based on the filename extension.
+Generate storage reports that show the state of file server volumes and anyone who exceeds the quota or users files that aren’t allowed.
+Deploy desktop management via Group Policy Object (GPO) on DC-1 (based on detailed instructions from your instructor). 
+Share a desktop background wallpaper jpeg image to everyone in the domain.
+Deploy a GPO on DC-1 to force all the end devices in the domain to use the jpeg image as its background wallpaper. 
+Disallow changes to the items on the desktop.
+Force active directory replication to synchronize this policy to DC-2.
+Configure anti-virus software deployment via Group Policy Object (GPO) on DC-1(based on detailed instructions from your instructor).
+Share an anti-virus software MSI package to all the computers in the domain.
+Deploy a GPO on DC-1 to force all the end devices in the domain to install the anti-virus software automatically.
+Test it on the end devices to verify the GPO effects.
+Install a simple FTP server and demonstrate the FTP services running. Briefly describe in writing what is FTP protocol.
+You need to demonstrate that the part is successfully completed to your instructor. Describe orally what this part is and how you implement it. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to the instructions provided and paste them to your portfolio file for future submission on LMS for marking.
+Make sure that you have backup your lab configuration for the next part!
+
+
+Part 5: Install a WSUS server and Implement interoperability between Linux and Windows
+For this part, you need to 
+install and configure a WSUS server service role on FS-1 server in Brisbane LAN as demonstrated in the diagram below
+join a Linux server to the existing ADDS domain and share files between the Linux server and the windows workstations. 
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+
+For this part:
+Prepare the work site as per legislative and WHS requirements covered in the e-mail in the previous part.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the WSUS server and the Linux server according to the instructions provided by your instructor. 
+Install and configure a WSUS server service role on FS-1 server as described below:
+Install and configure Windows Server Update Services role on the FS-1 server according to the instructions given by your instructor. FS-1 will become WSUS-1 server as well.
+Download and approve the windows updates as instructed by your instructor.
+Create and configure a computer-based domain Group policy named “Auto Windows Update” to allow the domain computers to detect and pull the windows updates from the WSUS-1 server. 
+Reboot FS-2 to verify that the Auto Windows Update policy is effective. 
+Describe briefly what is web services and take screenshots of the IIS Web server has been installed on the WSUS server to confirm that the WSUS server is acting as a web server as well. 
+Join a Linux server to the existing ADDS domain and enable file sharing between the Linux Server and FS-2. (Note: if the DHCP server implemented previously is a Linux server, adding a new Linux server is not necessary.) 
+Install a simple eMail server on either the Brisbane site. 
+You need to demonstrate that the part is successfully completed to your instructor. Describe orally what this part is and how you implement it. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to the instructions provided and paste them to your portfolio file for future submission on LMS for marking.
+Make sure that you have backup your lab configuration for the next part!
+
+
+Part 6: Install and Configure VoIP services on the LANs of Brisbane and Cairns
+For this part, you need to implement VoIP services in Brisbane LAN and Cairns LAN and enable cross-site communication between Brisbane and Cairns. The topology is demonstrated in the diagram below.
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+
+For this part:
+Prepare the work site as per legislative and WHS requirements covered in the e-mail in the previous part.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the Call Manager-1, Call-Manager-2, and the VLAN VoIP according to the instructions provided by your instructor. 
+Install and configure two Call-Manager servers with selected voice codec according to your instructor’s instructions. 
+Install and configure IP Phone-1 and IP Phone-2 and make sure these two IP phones can communicate with each other across the Site-To-Site VPN Tunnel.
+Describe what VoIP is in writing format.
+You need to demonstrate that the part is successfully completed to your instructor. Describe orally what this part is and how you implement it. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to the instructions provided and paste them to your portfolio file for future submission on LMS for marking.
+Make sure that you have backup your lab configuration for the next part!
+
+
+Part 7: Implement Videoconferencing services on the LANs of Brisbane and Cairns
+For this part, you need to implement Videoconferencing services in Brisbane LAN and Cairns LAN and enable cross-site video communication between Brisbane and Cairns. The topology is demonstrated in the diagram below.
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+
+For this part:
+Prepare the work site as per legislative and WHS requirements covered in the e-mail in the previous part.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the Comm-1 server, which is the communication server for a selected videoconferencing product of your instructor’s choice. For example, the Comm-1 server could be a Skype for Business Front End Server if chosen. Request more detailed instructions from your instructor. 
+Install and configure videoconferencing services on Comm-1. 
+Verify that a video meeting can be started on a client workstation from Brisbane site and communicated through to the other site with another client on Cairns via audio and video. It should work in both directions.
+Research for what codecs you can choose from for the videoconferencing software of your selection. Record what you have found in your portfolio. 
+You need to demonstrate that the part is successfully completed to your instructor. Describe orally what this part is and how you implement it. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to your instructor’s instructions provided and paste them to your portfolio file for future submission on LMS for marking.
+Make sure that you have backup your lab configuration for the next part!
+Part 8: Install and configure a network management software on the LANs of Brisbane and Cairns
+For this part, you need to implement network management tools in Brisbane LAN and Cairns LAN to assist in the monitoring and administration of network performance. The topology is demonstrated in the diagram below.
+
+277956620 / TechnoVectors / Shutterstock, modified by TAFE Queensland
+
+For this part:
+Prepare the work site as per legislative and WHS requirements covered in the e-mail in the previous part.
+Write out a table of IP addresses, netmasks and default gateways (where applicable) for the NMS-1 server, which is the network management server for a selected network management product of your instructor’s choice. For example, the NMS-1 server could be a PRTG Server if chosen. Request more detailed instructions from your instructor. 
+Install and configure the NMS-1 to collect Syslog and SNMP messages from servers and/or network devices. 
+Set and monitor alerts and logs on the monitored devices and reflect it on the NMS-1 to supervise the network performance in real time. 
+Generate traffic or create alerts on the monitored devices purposely. Verify the generated traffic or created alerts can be captured on the NMS-1 in real time. Briefly analyze the captured performance data on your portfolio with sample pictures and compose a short paragraph of analysis.
+Obtain instructions from your instructor orally and enable SNMP on monitored devices.
+Modify security policies on the company’s firewalls and the firewall policies on the monitored devices to specifically allow NMS-1 to remotely manage the monitored devices via SNMP.
+Briefly describe what SNMP is in writing format.   
+You need to demonstrate that the part is successfully completed to your instructor. Describe orally what this part is and how you implement it. Obtain a written sign-off.
+You need to take screenshots of the successful lab results according to your instructor’s instructions provided and paste them to your portfolio file for future submission on LMS for marking.
