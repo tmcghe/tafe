@@ -149,3 +149,6 @@ To pass the software side, all programs and software needed to be able to be suc
 - **Screenshots** of Various Configurations and Outputs
 - **Brief Descriptions** of Certain Concepts
 - **Troubleshooting Report**
+---
+
+For further queries or clarification regarding the documentation, please contact **Thomas McGhee** at **thomas.mcghee@connect.qut.edu.au**.
