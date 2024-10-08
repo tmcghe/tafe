@@ -67,4 +67,4 @@ This documentation serves as a comprehensive guide to implementing cloud infrast
 
 ---
 
-For further queries or clarification regarding the documentation, please contact **[Your Name]** at **[Your Email]**.
+For further queries or clarification regarding the documentation, please contact **Thomas McGhee** at **thomas.mcghee@connect.qut.edu.au**.
