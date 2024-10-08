@@ -61,7 +61,7 @@ The assessment covers the following main areas:
 ## 📊 Marking Criteria
 
 The assessment is evaluated based on the following key areas:
-| **Criteria**                                                      | **Evaluation**   |
+
 |-------------------------------------------------------------------|------------------|
 | Deployment and configuration of cloud resources                   | ✅ Satisfactory   |
 | Implementation of monitoring and management systems               | ✅ Satisfactory   |
