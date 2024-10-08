@@ -62,11 +62,11 @@ The assessment covers the following main areas:
 
 The assessment is evaluated based on the following key areas:
 
-- Deployment and configuration of cloud resources
-- Implementation of monitoring and management systems
-- Documentation quality and completeness
-- Adherence to best practices in cloud infrastructure design
-- Demonstration of understanding in cloud concepts and AWS services
+- Deployment and configuration of cloud resources                     ✅ Satisfactory
+- Implementation of monitoring and management systems                 ✅ Satisfactory
+- Documentation quality and completeness                              ✅ Satisfactory
+- Adherence to best practices in cloud infrastructure design          ✅ Satisfactory
+- Demonstration of understanding in cloud concepts and AWS services   ✅ Satisfactory
 
 For detailed marking criteria, please refer to the assessment rubric provided by your instructor.
 
