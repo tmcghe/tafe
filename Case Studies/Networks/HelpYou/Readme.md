@@ -1,154 +1,161 @@
-Project that encapsulates the two subjects:
-ICTNWK529 Install and manage complex ICT networks
-ICTNWK546 Manage network security
+# 🌐 HelpYou IT: Advanced Networking Project
 
-For building HelpYou IT from the ground up with advanced networking protocols and standards using cisco 1941 routers and 2940 switches hardware.
+## 🎓 Course Integration
+This project encapsulates two key subjects:
+- ICTNWK529 Install and manage complex ICT networks
+- ICTNWK546 Manage network security
 
-Complementary cisco packet tracer files (.pkt) files are provided to showcase on vIOS.
+## 🏗️ Project Objective
+Build HelpYou IT from the ground up, implementing advanced networking protocols and standards using Cisco 1941 routers and 2940 switches hardware.
 
-To pass the network needed to be ran on real hardware and marked off by a teacher, which was completed successfully (creation and set-up parts 1-7).
+## 🖥️ Simulation & Real-World Implementation
+- Complementary Cisco Packet Tracer (.pkt) files provided for vIOS simulation
+- Network successfully deployed and tested on real hardware (Creation and Set-up Parts 1-7)
+- Software side successfully implemented, mirroring a real-world environment (Creation and Set-up 8-10)
 
-To pass the software side, all programs and software needed to be able to be successfully deployed (i.e the same as a real world env), which was successfully completed (creation and set-up 8-10).
+## 🛠️ Network Infrastructure
 
-# Assessment Overview
+### Network Devices
+- **Routers:** 
+  - SB Router (South Bank - Head Office)
+  - MG Router (Mt Gravatt - Branch Office)
+- **Switches:** 
+  - SB Switch (L2)
 
-# Network Devices and Protocols:
-- **Routers:**
-  - SB Router
-  - MG Router
-- **Protocols & Services:**
-  - PPP Encapsulation
-  - OSPF Routing
-  - NAT (Network Address Translation)
-  - GRE Tunnel
-  - IPSec
-  - DHCP
-  - IP Phones
-  - CME (Call Manager Express)
----
+### Protocols & Services
+- PPP Encapsulation
+- OSPF Routing
+- NAT (Network Address Translation)
+- GRE Tunnel
+- IPSec
+- DHCP
+- VoIP (IP Phones)
+- CME (Call Manager Express)
 
-# Operating Systems and Servers:
+## 💻 Operating Systems & Servers
+- Windows PC
+- Windows Server
+- Ubuntu Server
+- Domain Controllers (DC1 and DC2)
 
-- **Windows PC**
-- **Windows Server**
-- **Ubuntu Server**
-- **Domain Controllers (DC1 and DC2)**
+## 🌐 Network Services
+- Proxy Server
+- NTP (Network Time Protocol)
+- DNS (Domain Name System)
+- FTP (File Transfer Protocol)
+- IIS (Internet Information Services)
+- WSUS (Windows Server Update Services)
 
----
+## 📂 Active Directory & Related Services
+- Active Directory Domain Services (ADDS)
+- Sites and Subnets Configuration
+- Domain Controller Replication
+- DFS (Distributed File System)
+- FSRM (File Server Resource Manager)
+- GPO (Group Policy Object)
 
-# Network Services and Protocols:
+## 🛡️ Security & Management Tools
+- Anti-Virus Software Deployment
+- PRTG (Network Monitoring Tool)
+- Security Onion (Security Monitoring Tool)
+- SNMP (Simple Network Management Protocol)
+- Syslog
 
-- **Proxy Server**
-- **NTP (Network Time Protocol)**
-- **DNS (Domain Name System)**
-- **FTP (File Transfer Protocol)**
-- **IIS (Internet Information Services)**
-- **WSUS (Windows Server Update Services)**
-
----
-
-# Active Directory and Related Services:
-
-- **Active Directory Domain Services (ADDS)**
-- **Sites and Subnets Configuration**
-- **Domain Controller Replication**
-- **DFS (Distributed File System)**
-- **FSRM (File Server Resource Manager)**
-- **GPO (Group Policy Object)**
-
----
-
-# Security and Management Tools:
-
-- **Anti-Virus Software Deployment**
-- **PRTG (Network Monitoring Tool)**
-- **Security Onion (Security Monitoring Tool)**
-- **SNMP (Simple Network Management Protocol)**
-- **Syslog**
-
----
-
-# Configuration Files:
-
+## 📁 Key Configuration Files
 - `/etc/dhcp/dhcpd.conf`
 - `/etc/default/isc-dhcp-server`
 
----
+## 🔍 Troubleshooting Focus
+- Network Symptoms Analysis
+- Advanced Troubleshooting Techniques
+- Network Diagnostic Utilities
+- Structured Issue Resolution Process
 
-# Troubleshooting:
+## 🧪 Lab Modules
 
-- **Network Symptoms**
-- **Troubleshooting Tools and Techniques**
-- **Network Diagnostic Utilities**
-- **Issue Resolution Process**
+### Core Labs (1-7): Fundamental Networking Concepts
+1. **PPP and OSPF Configuration**
+   - PPP encapsulation on serial interfaces
+   - OSPF routing setup and verification
 
----
+2. **NAT and Proxy Server**
+   - NAT configuration on routers
+   - Proxy server installation and client setup
 
-# **10 Main Labs:** Covering core networking concepts and advanced configurations
+3. **Zone-Based Firewall (ZBF)**
+   - Security zone creation and policy definition
+   - Interface assignment and ZBF verification
 
+4. **Advanced Routing**
+   - Analysis of routing tables across network devices
 
-### Detailed Lab Breakdown
+5. **VPN and Tunneling**
+   - IPSec VPN configuration
+   - GRE tunnel setup with IPSec protection
+   
+   🎥 **Lab Demo Video**: [IPSec over GRE Tunnel Lab Setup](https://www.youtube.com/shorts/jG8KiPqzxY4)
+   
+   **Hardware Setup:**
+   - Bottom of server rack: Cisco 2941 router
+   - Top of server rack: Cisco 1941 router
+   
+   **Network Topology:**
+   ```
+   SB Router (South Bank - Head Office)
+   - S0/0/0: 209.165.200.1/28
+   - Tunnel 0: 172.16.12.1/30
+   Model: Cisco 2941 (Top router)
 
-#### Lab 1: PPP and OSPF Configuration
-- PPP encapsulation on serial interfaces
-- OSPF routing setup and verification
+   ISP Router
+   - S0/0/0: 209.165.200.2/28
+   - S0/0/1: 209.165.200.17/28
+   - G0/0: 8.8.8.1/8
+   Model: Cisco 2941 (Middle router)
 
-#### Lab 2: NAT and Proxy Server
-- NAT configuration on routers
-- Proxy server installation and client setup
+   MG Router (Mt Gravatt - Branch Office)
+   - S0/0/1: 209.165.200.18/28
+   - Tunnel 0: 172.16.12.1/30
+   - G0/1: 172.16.0.1/24
+   Model: Cisco 1941 (Bottom router)
+   ```
 
-#### Lab 3: Zone-Based Firewall (ZBF)
-- Security zone creation and policy definition
-- Interface assignment and ZBF verification
+6. **DHCP Services**
+   - DHCP server configuration on router and Ubuntu server
+   - DHCP binding verification
 
-#### Lab 4: Advanced Routing
-- Analysis of routing tables across network devices
+7. **VoIP Implementation**
+   - Cisco Call Manager Express (CME) setup
+   - IP phone registration and testing
 
-#### Lab 5: VPN and Tunneling
-- IPSec VPN configuration
-- GRE tunnel setup with IPSec protection
+### Advanced Labs (8-10): Specialized Technologies and Services
 
-#### Lab 6: DHCP Services
-- DHCP server configuration on router and Ubuntu server
-- DHCP binding verification
+8. **Windows Server and Active Directory** (with Sub-labs)
+   1. Domain Controller Setup
+   2. AD Sites and Subnets Configuration
+   3. Domain Controller Replication
+   4. DNS Integration with AD
+   5. Distributed File System (DFS) Implementation
+   6. File Server Resource Manager (FSRM) Setup
+   7. Group Policy Object (GPO) for Desktop Management
+   8. Anti-Virus Deployment via GPO
+   9. Windows Server Update Services (WSUS) Configuration
+   10. FTP Server Installation
+   11. Ubuntu Integration with Active Directory
 
-#### Lab 7: VoIP Implementation
-- Cisco Call Manager Express (CME) setup
-- IP phone registration and testing
+9. **Network Monitoring**
+   - PRTG Network Monitor deployment
+   - SNMP and Syslog sensor configuration
 
-## **Multiple Sub-labs:** Detailed explorations of specific technologies and services
-#### Lab 8: Windows Server and Active Directory (with Sub-labs)
-8.1. Domain Controller Setup
-8.2. AD Sites and Subnets Configuration
-8.3. Domain Controller Replication
-8.4. DNS Integration with AD
-8.5. Distributed File System (DFS) Implementation
-8.6. File Server Resource Manager (FSRM) Setup
-8.7. Group Policy Object (GPO) for Desktop Management
-8.8. Anti-Virus Deployment via GPO
-8.9. Windows Server Update Services (WSUS) Configuration
-8.10. FTP Server Installation
-8.11. Ubuntu Integration with Active Directory
+10. **Security Monitoring**
+    - Security Onion installation and setup
+    - Network traffic analysis and security event monitoring
 
-#### Lab 9: Network Monitoring
-- PRTG Network Monitor deployment
-- SNMP and Syslog sensor configuration
+## 📝 Documentation Requirements
+- Detailed screenshots of configurations and outputs
+- Concise descriptions of key concepts
+- Comprehensive troubleshooting report
 
-#### Lab 10: Security Monitoring
-- Security Onion installation and setup
-- Network traffic analysis and security event monitoring
-
-### Additional Tasks
-- Comprehensive network troubleshooting
-- Documentation and report writing
-
----
-
-# Documentation Requirements:
-
-- **Screenshots** of Various Configurations and Outputs
-- **Brief Descriptions** of Certain Concepts
-- **Troubleshooting Report**
----
-
-For further queries or clarification regarding the documentation, please contact **Thomas McGhee** at **thomas.mcghee@connect.qut.edu.au**.
+## 📞 Contact Information
+For further queries or clarification, please contact:
+**Thomas McGhee**
+Email: thomas.mcghee@connect.qut.edu.au
