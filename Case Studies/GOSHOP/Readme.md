@@ -20,8 +20,8 @@ This repository contains the assessment submission for the "Design and Implement
 
 ```
 .
-├── GO_Shop_Cloud_Solution.docx   # Main assessment document
-└── README.md                     # This file
+├── Deploy_And_Manage_Cloud_Infra     # Main assessment document
+└── README.md                         # This file
 ```
 
 ## 📚 Assessment Tasks
