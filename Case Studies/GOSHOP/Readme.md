@@ -61,12 +61,14 @@ The assessment covers the following main areas:
 ## 📊 Marking Criteria
 
 The assessment is evaluated based on the following key areas:
+| **Criteria**                                                      | **Evaluation**   |
+|-------------------------------------------------------------------|------------------|
+| Deployment and configuration of cloud resources                   | ✅ Satisfactory   |
+| Implementation of monitoring and management systems               | ✅ Satisfactory   |
+| Documentation quality and completeness                            | ✅ Satisfactory   |
+| Adherence to best practices in cloud infrastructure design        | ✅ Satisfactory   |
+| Demonstration of understanding in cloud concepts and AWS services | ✅ Satisfactory   |
 
-- Deployment and configuration of cloud resources                     ✅ Satisfactory
-- Implementation of monitoring and management systems                 ✅ Satisfactory
-- Documentation quality and completeness                              ✅ Satisfactory
-- Adherence to best practices in cloud infrastructure design          ✅ Satisfactory
-- Demonstration of understanding in cloud concepts and AWS services   ✅ Satisfactory
 
 For detailed marking criteria, please refer to the assessment rubric provided by your instructor.
 
