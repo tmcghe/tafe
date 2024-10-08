@@ -126,3 +126,7 @@ The portfolio has been consolidated into a single document for ease of review, w
 ---
 **Sign-Off Requested From**:  
 **Cloud Manager**
+---
+
+For further queries or clarification regarding the documentation, please contact **Thomas McGhee** at **thomas.mcghee@connect.qut.edu.au**.
+
