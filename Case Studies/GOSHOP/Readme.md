@@ -20,8 +20,8 @@ This repository contains the assessment submission for the "Design and Implement
 
 ```
 .
-├── Deploy_And_Manage_Cloud_Infra     # Main assessment document
-└── README.md                         # This file
+├── Deploy_And_Manage_Cloud_Infra.pdf    # Main assessment document
+└── README.md                            # This file
 ```
 
 ## 📚 Assessment Tasks
@@ -76,7 +76,7 @@ This project is submitted as part of an educational assessment and is not licens
 
 ---
 
-📌 **Note**: This README is part of an assessment submission and does not represent a fully implemented cloud solution. It serves as documentation for the assessment tasks completed in the `GO_Shop_Cloud_Solution.docx` file.
+📌 **Note**: This README is part of an assessment submission and does not represent a fully implemented cloud solution. It serves as documentation for the assessment tasks completed in the `Deploy_And_Manage_Cloud_Infra.pdf` file.
 ---
 
 For further queries or clarification regarding the documentation, please contact **Thomas McGhee** at **thomas.mcghee@connect.qut.edu.au**.
