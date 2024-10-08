@@ -75,19 +75,6 @@ To pass the software side, all programs and software needed to be able to be suc
 
 ---
 
-# Concepts to Describe:
-
-- **Proxy**
-- **Firewall Applications**
-- **NTP (Network Time Protocol)**
-- **User Authentication**
-- **Active Directory Services**
-- **ADDS Sites Load Balancing**
-- **Web Application**
-- **FTP Protocol**
-
----
-
 # Troubleshooting:
 
 - **Network Symptoms**
