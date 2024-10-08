@@ -84,12 +84,63 @@ To pass the software side, all programs and software needed to be able to be suc
 
 ---
 
-# Lab Structure:
+# **10 Main Labs:** Covering core networking concepts and advanced configurations
 
-- **10 Main Labs:**
-  - Lab 1 to Lab 10
-- **Multiple Sub-labs:**
-  - Especially in Lab 8 (8.1 to 8.11)
+
+### Detailed Lab Breakdown
+
+#### Lab 1: PPP and OSPF Configuration
+- PPP encapsulation on serial interfaces
+- OSPF routing setup and verification
+
+#### Lab 2: NAT and Proxy Server
+- NAT configuration on routers
+- Proxy server installation and client setup
+
+#### Lab 3: Zone-Based Firewall (ZBF)
+- Security zone creation and policy definition
+- Interface assignment and ZBF verification
+
+#### Lab 4: Advanced Routing
+- Analysis of routing tables across network devices
+
+#### Lab 5: VPN and Tunneling
+- IPSec VPN configuration
+- GRE tunnel setup with IPSec protection
+
+#### Lab 6: DHCP Services
+- DHCP server configuration on router and Ubuntu server
+- DHCP binding verification
+
+#### Lab 7: VoIP Implementation
+- Cisco Call Manager Express (CME) setup
+- IP phone registration and testing
+
+## **Multiple Sub-labs:** Detailed explorations of specific technologies and services
+#### Lab 8: Windows Server and Active Directory (with Sub-labs)
+8.1. Domain Controller Setup
+8.2. AD Sites and Subnets Configuration
+8.3. Domain Controller Replication
+8.4. DNS Integration with AD
+8.5. Distributed File System (DFS) Implementation
+8.6. File Server Resource Manager (FSRM) Setup
+8.7. Group Policy Object (GPO) for Desktop Management
+8.8. Anti-Virus Deployment via GPO
+8.9. Windows Server Update Services (WSUS) Configuration
+8.10. FTP Server Installation
+8.11. Ubuntu Integration with Active Directory
+
+#### Lab 9: Network Monitoring
+- PRTG Network Monitor deployment
+- SNMP and Syslog sensor configuration
+
+#### Lab 10: Security Monitoring
+- Security Onion installation and setup
+- Network traffic analysis and security event monitoring
+
+### Additional Tasks
+- Comprehensive network troubleshooting
+- Documentation and report writing
 
 ---
 
