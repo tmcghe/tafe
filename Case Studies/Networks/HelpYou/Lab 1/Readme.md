@@ -1,6 +1,5 @@
 
-# 🌐 Advanced Network Design Project: Multi-Site ISP, SB, and MG Network
-
+# 🌐 Lab 1 Documentation
 ## 🎓 Project Overview
 This portfolio project demonstrates a comprehensive network design and configuration setup spanning multiple locations, utilizing advanced networking concepts and protocols. The setup includes ISP, SB (South Bank - Head Office), and MG (Mt Gravatt - Branch Office) sites, configured with Cisco 1941 routers and switches, designed for real-world implementation.
 
