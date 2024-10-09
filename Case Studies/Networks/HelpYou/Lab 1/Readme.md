@@ -231,7 +231,3 @@ do sh ip int br
 For further queries or support, feel free to reach out:
 **Thomas McGhee**  
 Email: thomas.mcghee@connect.qut.edu.au
-
----
-
-This project highlights proficiency in advanced networking protocols, inter-office communication security, and Cisco hardware setup. Ideal for showcasing practical skills in networking!
