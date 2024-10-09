@@ -1,0 +1,4 @@
+int s0/0/0
+ppp authentication chap
+ip address 209.165.200.1 255.255.255.240
+no shut

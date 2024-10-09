@@ -1,0 +1,38 @@
+Step 2. Configure the SB Router’s LAN interface G0/0 with router-on-a-stick configuration to cater for three VLANs at the same time. 
+Assign the subinterfaces with IP address according to the aforementioned ip address table. 
+
+!###Configuring Router SB###!
+en
+conf t
+hostname SB
+
+!###Configuring G0/0 interface to up state###!
+int g0/0
+no shut
+
+!### Configuring virtual routing interface for each Vlan###!
+!##########################VLAN20##########################!
+!####################VLAN 20 Has 40 PCs####################!
+int g0/0.20
+encapsulation dot1q 20
+ip address 192.168.20.1 255.255.255.224
+exit
+!##########################VLAN20##########################!
+!####################VLAN 30 Has 40 PCs####################!
+int g0/0.30
+encapsulation dot1q 30
+ip address 192.168.30.1 255.255.255.224
+exit
+!##########################VLAN20##########################!
+!####################VLAN 90 Has 5 PCs#####################!
+int g0/0.90
+encapsulation dot1q 90
+ip address 192.168.90.1 255.255.255.248
+exit
+!###Showing Route table for confirmation###!
+do sh ip route
+!##########################################################!
+!###Showing ip interfaces configuration####!
+do sh ip int br
+!###Part 1: Cable the network and configure the devices IP address!
+!###STEP 2 Successfully completed!###!

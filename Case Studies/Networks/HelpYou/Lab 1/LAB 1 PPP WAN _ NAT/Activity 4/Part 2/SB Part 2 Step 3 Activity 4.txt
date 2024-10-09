@@ -1,0 +1,32 @@
+!###Step 3. Specify the sub-interfaces and serial interfaces as nat inside/outside on the SB Router.###!
+en
+conf t
+!### Specifying Serial interface on SB->ISP Router to be outside###!
+int s0/0/0
+ip nat outside
+no shut
+exit
+
+!###Specifying the sub-interfaces as inside###!
+!###############################################!
+!###Setting g0/0.20 as inside for translation###!
+int g0/0.20
+ip nat inside
+no shut
+exit
+
+!###Setting g0/0.30 as inside for translation###!
+int g0/0.30
+ip nat inside
+no shut
+exit
+
+
+!###Setting g0/0.90 as inside for translation###!
+int g0/0.90
+ip nat inside
+no shut
+exit
+
+!Verifying PAT Config was successfull...
+do sh ip nat trans

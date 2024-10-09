@@ -1,0 +1,59 @@
+Step 2. Configure the SB Router’s LAN interface G0/0 with router-on-a-stick configuration to cater for three VLANs at the same time. 
+Assign the subinterfaces with IP address according to the aforementioned ip address table.
+
+
+!###Configuring the hostname of SB-S1###!
+en
+conf t
+hostname SB-S1
+
+
+!### Initializing G0/1 - Goes to SB###!
+int g0/1
+switchport mode trunk
+no shut
+exit
+!###Initializing Vlans###!
+
+!###Initializing CS VLAN###!
+int vlan 20
+exit
+!###Initializing Marketing VLAN###!
+int vlan 30
+exit
+!###Initializing Server VLAN###!
+int vlan 90
+exit
+!###Naming Vlans###!
+!###Naming vlan 20###!
+vlan 20
+name CS
+!###Naming vlan 30###!
+vlan 30
+name Marketing
+!###Naming vlan 90###!
+vlan 90
+name Server
+
+!###Configuring port ranges to co-incide with VLAN ranges###!
+!###Configuring VLAN 20###!
+int range fastEthernet0/1-8
+description CS
+switchport mode access
+switchport access vlan 20
+no shut
+exit
+!###Configuring VLAN 30###!
+int range fastEthernet0/9-17
+description Marketing
+switchport mode access
+switchport access vlan 30
+no shut
+exit
+!###Configuring VLAN 90###!
+int range fastEthernet0/18-24
+description Server
+switchport mode access 
+switchport access vlan 90
+no shut
+exit

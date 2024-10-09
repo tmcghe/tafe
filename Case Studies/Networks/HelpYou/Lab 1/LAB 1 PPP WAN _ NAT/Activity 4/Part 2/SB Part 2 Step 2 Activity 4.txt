@@ -1,0 +1,4 @@
+!###Step 2. Define the PAT from the inside source list to the serial interface s0/0/0 on the SB Router.###!
+conf t
+ip nat inside source list 1 int s0/0/0
+exit

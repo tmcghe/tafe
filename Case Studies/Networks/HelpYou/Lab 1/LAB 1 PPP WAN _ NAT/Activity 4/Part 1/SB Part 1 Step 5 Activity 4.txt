@@ -1,0 +1,10 @@
+!### Removing OSPF Settings from the SB Router!##!
+en
+conf t
+router ospf 1
+no network 209.165.200.0 0.0.0.15 area 0
+!###Disabling all the sub-networks of SB's ROAS so its not discoverable by OSPF###!
+no network 192.168.20.0 0.0.0.63 area 0
+no network 192.168.30.0 0.0.0.63 area 0
+no network 192.168.90.0 0.0.0.7 area 0
+exit

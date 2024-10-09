@@ -1,0 +1,5 @@
+!###MG-S1 Configuration!###!
+en
+conf t
+hostname MG-S1
+int g0/1

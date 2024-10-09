@@ -1,0 +1,8 @@
+!###Step 1. Define an access control list that matches the SB Router’s LAN private IP address range.###!
+!###Defining ACL on SB Router
+en
+conf t
+access-list 1 permit 192.168.20.0 0.0.0.31
+access-list 1 permit 192.168.30.0 0.0.0.31
+access-list 1 permit 192.168.90.0 0.0.0.31
+exit

@@ -1,0 +1,10 @@
+!###Step 1. Configure a static mapping to translate between the WWW Server
+!and  private ip address and the public address 209.165.200.10.###!
+en
+conf t
+
+!###Configuring static NAT translation for WWW server###!
+ip nat inside source static 192.168.90.10 209.165.200.10
+end
+!### verify that NAT translation works###!
+sh ip nat trans
