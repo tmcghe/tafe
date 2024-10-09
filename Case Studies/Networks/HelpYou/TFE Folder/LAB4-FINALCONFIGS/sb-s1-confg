@@ -1,0 +1,216 @@
+
+!
+! Last configuration change at 10:08:26 UTC Mon Mar 1 1993
+!
+version 15.0
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname SB-S1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+system mtu routing 1500
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-3940642048
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3940642048
+ revocation-check none
+ rsakeypair TP-self-signed-3940642048
+!
+!
+crypto pki certificate chain TP-self-signed-3940642048
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 33393430 36343230 3438301E 170D3933 30333031 30313236 
+  30315A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 39343036 
+  34323034 3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100C904 57325A70 5C33E840 CBD42FC3 DBF96CFF 79986B99 EE7AC36C 2616020E 
+  F3EA052C 43D10CE9 60BDB9A2 A08CA8C6 3359B2B6 6B69590D 38BDBEE8 994C3E9F 
+  6B4AEEE3 730EAA3C 4FD8C012 ABD2F7BA 8DFDEAF3 6DF78FB7 190828B9 38C416DE 
+  FF20BD7A 13FC9C70 8BBF1E7A 420AD4B2 78B090BF 9F24BE40 BD276970 414A28FC 
+  7A010203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603 
+  551D2304 18301680 14BB6142 971128A4 18EEE9FC F7F49D74 12446A59 3D301D06 
+  03551D0E 04160414 BB614297 1128A418 EEE9FCF7 F49D7412 446A593D 300D0609 
+  2A864886 F70D0101 05050003 818100BE 9F2388C6 6772F375 A9E2157D 857D7297 
+  A0199F0E 7B855637 11C0F99D 6361C364 CD6075BC 67A12DD6 D6C4A0D4 F941DD9D 
+  F5EA9BF0 4638373C 9A750527 43B31899 892F29D6 8A74FF3F 30785C0F 38E75782 
+  C9B8E8BF 76FD7985 7087F20A 60CA5C33 71A1A9E0 F77EAFEA 79F5CE8E E16C0D1B 
+  3EA844B3 8F884386 87F72F1A 6792AF
+  	quit
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/2
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/3
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/4
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/5
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/6
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/7
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/8
+ description CS
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/9
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/10
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/11
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/12
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/13
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/14
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/15
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/16
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/17
+ description Marketing
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/18
+ description Server
+ switchport access vlan 90
+ switchport mode access
+!
+interface FastEthernet0/19
+ description Server
+ switchport access vlan 90
+ switchport mode access
+!
+interface FastEthernet0/20
+ description Server
+ switchport access vlan 90
+ switchport mode access
+!
+interface FastEthernet0/21
+ description Server
+ switchport access vlan 90
+ switchport mode access
+!
+interface FastEthernet0/22
+ description Server
+ switchport access vlan 90
+ switchport mode access
+!
+interface FastEthernet0/23
+ description Server
+ switchport access vlan 90
+ switchport mode access
+!
+interface FastEthernet0/24
+ description Server
+ switchport access vlan 20
+ switchport mode access
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 20,30,90
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan20
+ ip address 192.168.20.5 255.255.255.224
+!
+interface Vlan30
+ no ip address
+!
+interface Vlan90
+ no ip address
+!
+ip http server
+ip http secure-server
+!
+vstack
+!
+line con 0
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+end
